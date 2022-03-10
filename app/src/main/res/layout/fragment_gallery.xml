@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+
+     <ImageButton
+         android:id="@+id/btnPagarCarrito"
+         android:layout_width="184dp"
+         android:layout_height="51dp"
+         android:background="@drawable/bordes_redondos"
+         android:src="@mipmap/paypal"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.497"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/recyclerCarrito"
+         app:layout_constraintVertical_bias="0.746"
+
+         />
+
+     <TextView
+
+         android:id="@+id/textView5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Total a pagar: $"
+         android:textColor="@color/black"
+         android:textSize="25dp"
+         app:layout_constraintBottom_toTopOf="@+id/btnPagarCarrito"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.28"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/recyclerCarrito"
+         app:layout_constraintVertical_bias="0.518" />
+
+     <TextView
+         android:id="@+id/txtTotal"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="a"
+         android:textColor="@color/black"
+         android:textSize="25dp"
+         app:layout_constraintBottom_toTopOf="@+id/btnPagarCarrito"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.057"
+         app:layout_constraintStart_toEndOf="@+id/textView5"
+         app:layout_constraintTop_toBottomOf="@+id/recyclerCarrito"
+         app:layout_constraintVertical_bias="0.555" />
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/recyclerCarrito"
+         android:layout_width="405dp"
+         android:layout_height="597dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.333"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.009" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

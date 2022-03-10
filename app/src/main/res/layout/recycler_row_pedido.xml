@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    card:cardCornerRadius="8dp"
+    card:cardElevation="15dp"
+    android:id="@+id/rowPedido"
+    card:cardBackgroundColor="#eee"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:stretchColumns="*"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idPedidoRow"
+                android:layout_width="3dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="Materia"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/fechaPedidoRow"
+                android:layout_width="5dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/estadoPedidoRow"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="Semestre 0"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/totalPedidoRow"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:text="Semestre 0"
+                android:textAlignment="center"
+                android:textColor="#000" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.cardview.widget.CardView>
